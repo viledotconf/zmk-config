@@ -21,17 +21,17 @@
             bindings = <
 &kp ESC             &kp SQT   &kp COMMA  &kp DOT   &kp P  &kp Y          &kp F             &kp G  &kp C             &kp R    &kp L  &kp BSPC
 &mt LEFT_SHIFT TAB  &kp A     &kp O      &kp E     &kp U  &kp I          &kp D             &kp H  &kp T             &lt 3 N  &kp S  &kp MINUS
-&mo 4               &kp SEMI  &kp Q      &kp J     &kp K  &kp X          &kp B             &kp M  &kp W             &kp V    &kp Z  &kp ESC
+&mo 4               &kp SEMI  &kp Q      &kp J     &kp K  &kp X          &kp B             &kp M  &kp W             &kp V    &kp Z  &kp DELETE
                                          &kp LGUI  &mo 1  &lt 5 SPACE    &mt RSHIFT ENTER  &mo 2  &kp LEFT_CONTROL
             >;
         };
 
         S1 {
             bindings = <
-&kp  &kp GRAVE  &kp AT    &kp HASH  &kp PERCENT    &kp       &kp     &kp PLUS      &kp ASTERISK   &kp EQUAL  &kp        &kp
-&kp  &kp        &kp PIPE  &kp EXCL  &kp AMPERSAND  &kp       &kp     &kp DOLLAR    &kp SLASH      &kp TILDE  &kp CARET  &kp
-&kp  &kp        &kp       &kp       &kp            &kp       &kp     &kp QUESTION  &kp BACKSLASH  &kp        &kp        &kp
-                          &trans    &trans         &trans    &trans  &trans        &trans
+&none  &kp GRAVE  &kp AT    &kp HASH  &kp PERCENT    &none     &none   &kp PLUS      &kp ASTERISK   &kp EQUAL  &none      &none
+&none  &none      &kp PIPE  &kp EXCL  &kp AMPERSAND  &none     &none   &kp DOLLAR    &kp SLASH      &kp TILDE  &kp CARET  &none
+&none  &none      &none     &none     &none          &none     &none   &kp QUESTION  &kp BACKSLASH  &none      &none      &none
+                            &trans    &trans         &trans    &trans  &trans        &trans
             >;
         };
 
@@ -55,20 +55,29 @@
 
         Media {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&kp C_BRIGHTNESS_AUTO  &none  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &none  &none         &none  &none  &none  &none  &none  &none
+&none                  &none  &kp C_VOLUME_DOWN     &kp C_VOLUME_UP       &none  &none         &none  &none  &none  &none  &none  &none
+&trans                 &none  &none                 &none                 &none  &none         &none  &none  &none  &none  &none  &none
+                                                    &none                 &none  &kp K_MUTE    &none  &none  &none
             >;
         };
 
         Movement {
             bindings = <
-&trans  &trans     &trans     &trans    &trans    &trans    &trans  &trans    &trans         &trans       &trans     &trans
-&trans  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI  &trans    &trans  &kp LEFT  &kp DOWN       &kp UP       &kp RIGHT  &trans
-&trans  &trans     &trans     &trans    &trans    &trans    &trans  &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &trans
-                              &trans    &trans    &trans    &trans  &trans    &trans
+&trans  &trans     &trans     &trans    &trans    &trans        &trans         &trans    &trans         &trans       &trans     &trans
+&trans  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI  &trans        &kp BACKSPACE  &kp LEFT  &kp DOWN       &kp UP       &kp RIGHT  &trans
+&trans  &trans     &trans     &trans    &trans    &kp DELETE    &trans         &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &trans
+                              &trans    &trans    &trans        &trans         &trans    &trans
             >;
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        S2+numpad {
+            if-layers = <2>;
+            then-layer = <3>;
         };
     };
 };
