@@ -57,10 +57,10 @@
 
         Movement {
             bindings = <
-&kp CAPSLOCK  &trans     &trans     &trans    &trans    &trans        &trans         &trans    &trans         &trans       &trans     &trans
-&trans        &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI  &trans        &kp BACKSPACE  &kp LEFT  &kp DOWN       &kp UP       &kp RIGHT  &kp SPACE
-&trans        &trans     &trans     &trans    &trans    &kp DELETE    &trans         &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &trans
-                                    &trans    &trans    &trans        &kp ENTER      &trans    &trans
+&kp CAPSLOCK  &none      &none      &none     &none     &none         &none          &none      &kp MINUS      &kp PLUS     &none      &none
+&none         &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI  &none         &kp BACKSPACE  &kp LEFT   &kp DOWN       &kp UP       &kp RIGHT  &kp SPACE
+&none         &none      &none      &none     &none     &kp DELETE    &none          &kp HOME   &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &none
+                                    &none     &none     &trans        &kp ENTER      &kp SPACE  &none
             >;
         };
     };
