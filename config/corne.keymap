@@ -21,10 +21,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESC             &kp SQT   &kp COMMA  &kp DOT   &kp P  &kp Y          &kp F             &kp G  &kp C             &kp R    &kp L  &kp BACKSPACE
-&mt LEFT_SHIFT TAB  &kp A     &kp O      &kp E     &kp U  &kp I          &kp D             &kp H  &kp T             &lt 3 N  &kp S  &kp MINUS
-&mo 4               &kp SEMI  &kp Q      &kp J     &kp K  &kp X          &kp B             &kp M  &kp W             &kp V    &kp Z  &kp DELETE
-                                         &kp LGUI  &mo 1  &lt 5 SPACE    &mt RSHIFT ENTER  &mo 2  &kp LEFT_CONTROL
+&kp ESC             &kp SQT   &kp COMMA  &kp DOT   &kp P  &kp Y          &kp F          &kp G            &kp C             &kp R    &kp L  &kp SLASH
+&mt LEFT_SHIFT TAB  &kp A     &kp O      &kp E     &kp U  &kp I          &kp D          &kp H            &kp T             &lt 2 N  &kp S  &kp MINUS
+&mo 3               &kp SEMI  &kp Q      &kp J     &kp K  &kp X          &kp B          &kp M            &kp W             &kp V    &kp Z  &kp RIGHT_ALT
+                                         &kp LGUI  &mo 1  &lt 4 SPACE    &kp BACKSPACE  &kp RIGHT_SHIFT  &kp LEFT_CONTROL
             >;
         };
 
@@ -37,21 +37,12 @@
             >;
         };
 
-        S2 {
-            bindings = <
-&none  &none  &none  &none   &none   &none     &none   &kp LEFT_BRACKET  &kp RBKT      &none  &none  &none
-&none  &none  &none  &none   &none   &none     &none   &kp LS(LPAR)      &kp LS(RPAR)  &none  &none  &none
-&none  &none  &none  &none   &none   &none     &none   &kp LS(LBRC)      &kp LS(RBRC)  &none  &none  &none
-                     &trans  &trans  &trans    &trans  &trans            &trans
-            >;
-        };
-
         Numpad {
             bindings = <
-&kp KP_NUMLOCK  &none  &kp N1  &kp N2   &kp N3  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans          &none  &kp N4  &kp N5   &kp N6  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans          &none  &kp N7  &kp N8   &kp N9  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                               &kp DOT  &kp N0  &trans    &trans  &trans  &trans
+&kp KP_NUMLOCK  &none  &kp N1  &kp N2   &kp N3  &none     &none   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &none   &none  &none
+&none           &none  &kp N4  &kp N5   &kp N6  &none     &none   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans  &none  &none
+&none           &none  &kp N7  &kp N8   &kp N9  &none     &none   &kp LEFT_BRACE        &kp RIGHT_BRACE        &none   &none  &none
+                               &kp DOT  &kp N0  &trans    &trans  &trans                &trans
             >;
         };
 
@@ -69,7 +60,7 @@
 &kp CAPSLOCK  &trans     &trans     &trans    &trans    &trans        &trans         &trans    &trans         &trans       &trans     &trans
 &trans        &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI  &trans        &kp BACKSPACE  &kp LEFT  &kp DOWN       &kp UP       &kp RIGHT  &trans
 &trans        &trans     &trans     &trans    &trans    &kp DELETE    &trans         &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &trans
-                                    &trans    &trans    &trans        &trans         &trans    &trans
+                                    &trans    &trans    &trans        &kp ENTER      &trans    &trans
             >;
         };
     };
