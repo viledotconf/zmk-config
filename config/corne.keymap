@@ -58,7 +58,7 @@
         Movement {
             bindings = <
 &kp CAPSLOCK  &trans     &trans     &trans    &trans    &trans        &trans         &trans    &trans         &trans       &trans     &trans
-&trans        &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI  &trans        &kp BACKSPACE  &kp LEFT  &kp DOWN       &kp UP       &kp RIGHT  &trans
+&trans        &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI  &trans        &kp BACKSPACE  &kp LEFT  &kp DOWN       &kp UP       &kp RIGHT  &kp SPACE
 &trans        &trans     &trans     &trans    &trans    &kp DELETE    &trans         &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &trans
                                     &trans    &trans    &trans        &kp ENTER      &trans    &trans
             >;
