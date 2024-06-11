@@ -21,9 +21,9 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESC             &kp SQT   &kp COMMA  &kp DOT   &kp P  &kp Y          &kp F          &kp G            &kp C             &kp R    &kp L  &kp SLASH
-&mt LEFT_SHIFT TAB  &kp A     &kp O      &kp E     &kp U  &kp I          &kp D          &kp H            &kp T             &lt 2 N  &kp S  &kp MINUS
-&mo 3               &kp SEMI  &kp Q      &kp J     &kp K  &kp X          &kp B          &kp M            &kp W             &kp V    &kp Z  &kp RIGHT_ALT
+&kp ESC             &kp SQT   &kp COMMA  &kp DOT   &kp P  &kp Y          &kp F          &kp G            &kp C             &kp R  &kp L  &kp SLASH
+&mt LEFT_SHIFT TAB  &kp A     &kp O      &kp E     &kp U  &kp I          &kp D          &kp H            &kp T             &kp N  &kp S  &lt 2 MINUS
+&mo 3               &kp SEMI  &kp Q      &kp J     &kp K  &kp X          &kp B          &kp M            &kp W             &kp V  &kp Z  &kp RIGHT_ALT
                                          &kp LGUI  &mo 1  &lt 4 SPACE    &kp BACKSPACE  &kp RIGHT_SHIFT  &kp LEFT_CONTROL
             >;
         };
@@ -31,7 +31,7 @@
         S1 {
             bindings = <
 &none  &kp GRAVE  &kp AT    &kp HASH  &kp PERCENT    &none     &none   &kp PLUS      &kp ASTERISK   &kp EQUAL  &none      &none
-&none  &none      &kp PIPE  &kp EXCL  &kp AMPERSAND  &none     &none   &kp DOLLAR    &kp SLASH      &kp TILDE  &kp CARET  &none
+&none  &kp MINUS  &kp PIPE  &kp EXCL  &kp AMPERSAND  &none     &none   &kp DOLLAR    &kp SLASH      &kp TILDE  &kp CARET  &none
 &none  &none      &none     &none     &none          &none     &none   &kp QUESTION  &kp BACKSLASH  &none      &none      &none
                             &trans    &trans         &trans    &trans  &trans        &trans
             >;
@@ -39,10 +39,10 @@
 
         Numpad {
             bindings = <
-&kp KP_NUMLOCK  &none  &kp N1  &kp N2   &kp N3  &none     &none   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &none   &none  &none
-&none           &none  &kp N4  &kp N5   &kp N6  &none     &none   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans  &none  &none
-&none           &none  &kp N7  &kp N8   &kp N9  &none     &none   &kp LEFT_BRACE        &kp RIGHT_BRACE        &none   &none  &none
-                               &kp DOT  &kp N0  &trans    &trans  &trans                &trans
+&kp KP_NUMLOCK  &none  &kp N1  &kp N2   &kp N3  &none     &none   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp KP_PLUS      &kp KP_MINUS   &none
+&none           &none  &kp N4  &kp N5   &kp N6  &none     &none   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp KP_MULTIPLY  &kp KP_DIVIDE  &trans
+&none           &none  &kp N7  &kp N8   &kp N9  &none     &none   &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PERCENT      &none          &none
+                               &kp DOT  &kp N0  &trans    &trans  &kp KP_EQUAL          &trans
             >;
         };
 
