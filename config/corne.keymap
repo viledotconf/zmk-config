@@ -41,7 +41,7 @@
             bindings = <
 &kp KP_NUMLOCK  &none  &kp N1  &kp N2   &kp N3  &none     &none   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp KP_PLUS      &kp KP_MINUS   &to 5
 &none           &none  &kp N4  &kp N5   &kp N6  &none     &none   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp KP_MULTIPLY  &kp KP_DIVIDE  &trans
-&none           &none  &kp N7  &kp N8   &kp N9  &none     &none   &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PERCENT      &none          &none
+&none           &none  &kp N7  &kp N8   &kp N9  &none     &none   &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PERCENT      &none          &to 6
                                &kp DOT  &kp N0  &trans    &trans  &kp KP_EQUAL          &trans
             >;
         };
@@ -66,10 +66,19 @@
 
         Gaming {
             bindings = <
-&kp GRAVE  &kp N1  &kp N2  &kp N3     &kp N4    &kp N5       &trans  &trans  &trans  &trans  &trans  &to 0
+&kp ESC    &kp N1  &kp N2  &kp N3     &kp N4    &kp N5       &trans  &trans  &trans  &trans  &trans  &to 0
 &kp TAB    &kp Q   &kp W   &kp E      &kp R     &kp T        &trans  &trans  &trans  &trans  &trans  &trans
 &kp LSHFT  &kp A   &kp S   &kp D      &kp F     &kp G        &trans  &trans  &trans  &trans  &trans  &trans
                            &kp LCTRL  &kp LALT  &kp SPACE    &trans  &trans  &trans
+            >;
+        };
+
+        LOL {
+            bindings = <
+&kp ESC           &kp N1  &kp N2  &kp N3  &kp N4        &kp N5       &trans  &trans  &trans  &trans  &trans  &to 0
+&kp TAB           &kp Q   &kp W   &kp E   &kp R         &kp T        &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_CONTROL  &kp A   &kp S   &kp D   &kp F         &kp G        &trans  &trans  &trans  &trans  &trans  &trans
+                                  &kp V   &kp LEFT_ALT  &kp SPACE    &trans  &trans  &trans
             >;
         };
     };
