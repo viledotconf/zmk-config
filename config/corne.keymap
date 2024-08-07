@@ -72,6 +72,15 @@
                                      &kp LCTRL  &kp LEFT_ALT  &kp SPACE    &kp BACKSPACE  &mo 1  &kp LEFT_GUI
             >;
         };
+
+        layer_6 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
     };
 
     conditional_layers { compatible = "zmk,conditional-layers"; };
