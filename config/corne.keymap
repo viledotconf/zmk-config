@@ -21,37 +21,37 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESC             &kp SQT   &kp COMMA  &kp DOT   &kp P  &kp Y          &kp F                    &kp G            &kp C             &kp R  &kp L  &kp SLASH
-&mt LEFT_SHIFT TAB  &kp A     &kp O      &kp E     &kp U  &kp I          &kp D                    &kp H            &kp T             &kp N  &kp S  &lt 2 MINUS
-&mo 3               &kp SEMI  &kp Q      &kp J     &kp K  &kp X          &kp B                    &kp M            &kp W             &kp V  &kp Z  &kp RIGHT_ALT
-                                         &kp LGUI  &mo 1  &lt 4 SPACE    &mt RIGHT_ALT BACKSPACE  &kp RIGHT_SHIFT  &kp LEFT_CONTROL
+&kp ESC             &kp SQT   &kp COMMA  &kp DOT   &kp P  &kp Y          &kp F  &kp G          &kp C             &kp R  &kp L  &kp BACKSPACE
+&mt LEFT_SHIFT TAB  &kp A     &kp O      &kp E     &kp U  &kp I          &kp D  &kp H          &kp T             &kp N  &kp S  &kp RIGHT_SHIFT
+&mo 3               &kp SEMI  &kp Q      &kp J     &kp K  &kp X          &kp B  &kp M          &kp W             &kp V  &kp Z  &kp GLOBE
+                                         &kp LGUI  &mo 1  &lt 4 SPACE    &mo 2  &kp RIGHT_ALT  &kp LEFT_CONTROL
             >;
         };
 
         S1 {
             bindings = <
-&none  &kp GRAVE  &kp AT    &kp HASH  &kp PERCENT    &none     &none          &kp PLUS      &kp ASTERISK   &kp EQUAL  &none      &to 0
-&none  &kp MINUS  &kp PIPE  &kp EXCL  &kp AMPERSAND  &none     &none          &kp DOLLAR    &kp SLASH      &kp TILDE  &kp CARET  &none
-&none  &none      &none     &none     &none          &none     &none          &kp QUESTION  &kp BACKSLASH  &none      &none      &to 5
-                            &trans    &trans         &trans    &kp BACKSPACE  &trans        &trans
+&none  &kp DOUBLE_QUOTES  &kp AT    &kp HASH       &kp PERCENT       &none     &none          &kp PLUS      &kp ASTERISK   &kp MINUS  &kp EQUAL  &to 0
+&none  &kp GRAVE          &kp PIPE  &kp EXCL       &kp AMPERSAND     &none     &none          &kp DOLLAR    &kp SLASH      &kp TILDE  &kp CARET  &none
+&none  &kp COLON          &none     &kp LESS_THAN  &kp GREATER_THAN  &none     &none          &kp QUESTION  &kp BACKSLASH  &kp UNDER  &none      &to 5
+                                    &trans         &trans            &trans    &kp BACKSPACE  &trans        &trans
             >;
         };
 
         Numpad {
             bindings = <
-&kp KP_NUMLOCK  &none  &kp N1  &kp N2   &kp N3  &none     &none   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp KP_PLUS      &kp KP_MINUS   &to 0
-&none           &none  &kp N4  &kp N5   &kp N6  &none     &none   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp KP_MULTIPLY  &kp KP_DIVIDE  &trans
-&none           &none  &kp N7  &kp N8   &kp N9  &none     &none   &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PERCENT      &none          &to 5
-                               &kp DOT  &kp N0  &trans    &trans  &kp KP_EQUAL          &trans
+&kp KP_NUMLOCK  &none  &kp N1  &kp N2     &kp N3  &none     &none   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &none  &none  &to 0
+&none           &none  &kp N4  &kp N5     &kp N6  &none     &none   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none  &none  &none
+&none           &none  &kp N7  &kp N8     &kp N9  &none     &none   &kp LEFT_BRACE        &kp RIGHT_BRACE        &none  &none  &to 5
+                               &kp LCTRL  &kp N0  &trans    &trans  &none                 &none
             >;
         };
 
         Media {
             bindings = <
-&kp C_BRIGHTNESS_AUTO  &none  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &none  &ext_power EP_ON     &none       &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &none
-&none                  &none  &kp C_VOLUME_DOWN     &kp C_VOLUME_UP       &none  &none                &none       &bt BT_PRV     &none          &none          &bt BT_NXT     &none
-&trans                 &none  &none                 &none                 &none  &ext_power EP_OFF    &bt BT_CLR  &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_CLR_ALL
-                                                    &none                 &none  &kp K_MUTE           &none       &none          &none
+&none   &none       &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &none  &ext_power EP_ON     &none  &none  &none  &none  &none  &none
+&none   &kp K_MUTE  &kp C_VOLUME_DOWN     &kp C_VOLUME_UP       &none  &none                &none  &none  &none  &none  &none  &none
+&trans  &none       &bt BT_PRV            &bt BT_NXT            &none  &ext_power EP_OFF    &none  &none  &none  &none  &none  &none
+                                          &bt BT_CLR            &none  &none                &none  &none  &none
             >;
         };
 
@@ -70,6 +70,15 @@
 &kp TAB         &kp A     &kp O      &kp E      &kp U         &kp I        &kp D          &kp H  &kp T         &kp N  &kp S  &kp ENTER
 &kp LEFT_SHIFT  &kp SEMI  &kp Q      &kp J      &kp K         &kp X        &kp B          &kp M  &kp W         &kp V  &kp Z  &to 4
                                      &kp LCTRL  &kp LEFT_ALT  &kp SPACE    &kp BACKSPACE  &to 1  &kp LEFT_GUI
+            >;
+        };
+
+        layer_6 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
