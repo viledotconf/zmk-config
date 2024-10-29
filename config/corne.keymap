@@ -30,10 +30,10 @@
 
         S1 {
             bindings = <
-&none  &kp DOUBLE_QUOTES  &kp AT    &kp HASH       &kp PERCENT       &none     &none          &kp PLUS      &kp ASTERISK   &kp MINUS  &kp EQUAL  &to 0
-&none  &kp GRAVE          &kp PIPE  &kp EXCL       &kp AMPERSAND     &none     &none          &kp DOLLAR    &kp SLASH      &kp TILDE  &kp CARET  &none
-&none  &kp COLON          &none     &kp LESS_THAN  &kp GREATER_THAN  &none     &none          &kp QUESTION  &kp BACKSLASH  &kp UNDER  &none      &to 5
-                                    &trans         &trans            &trans    &kp BACKSPACE  &trans        &trans
+&none           &kp DOUBLE_QUOTES  &kp AT    &kp HASH       &kp PERCENT       &none     &none          &kp PLUS       &kp ASTERISK   &kp MINUS  &kp EQUAL  &to 0
+&kp LEFT_SHIFT  &kp GRAVE          &kp PIPE  &kp EXCL       &kp AMPERSAND     &none     &none          &kp DOLLAR     &kp SLASH      &kp TILDE  &kp CARET  &kp RSHIFT
+&none           &kp COLON          &none     &kp LESS_THAN  &kp GREATER_THAN  &none     &none          &kp QUESTION   &kp BACKSLASH  &kp UNDER  &none      &to 5
+                                             &trans         &trans            &trans    &kp BACKSPACE  &kp RIGHT_ALT  &trans
             >;
         };
 
@@ -70,15 +70,6 @@
 &kp TAB         &kp A     &kp O      &kp E      &kp U         &kp I        &kp D          &kp H  &kp T         &kp N  &kp S  &kp ENTER
 &kp LEFT_SHIFT  &kp SEMI  &kp Q      &kp J      &kp K         &kp X        &kp B          &kp M  &kp W         &kp V  &kp Z  &to 4
                                      &kp LCTRL  &kp LEFT_ALT  &kp SPACE    &kp BACKSPACE  &to 1  &kp LEFT_GUI
-            >;
-        };
-
-        layer_6 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
