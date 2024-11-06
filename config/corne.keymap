@@ -23,28 +23,28 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESC             &kp SQT           &kp COMMA            &kp DOT         &kp P               &kp Y          &kp F          &kp G                &kp C             &kp R                &kp L             &kp BACKSPACE
-&mt LEFT_SHIFT TAB  &mt LEFT_SHIFT A  &mt RIGHT_CONTROL O  &mt LEFT_ALT E  &mt LEFT_COMMAND U  &kp I          &kp D          &mt RIGHT_COMMAND H  &mt LEFT_ALT T    &mt RIGHT_CONTROL N  &mt LEFT_SHIFT S  &kp RIGHT_SHIFT
-&mo 3               &kp SEMI          &kp Q                &kp J           &kp K               &kp X          &kp B          &kp M                &kp W             &kp V                &kp Z             &kp RIGHT_ALT
-                                                           &kp LGUI        &mo 1               &lt 4 SPACE    &kp BACKSPACE  &mo 2                &kp LEFT_CONTROL
+&kp ESC  &kp SQT           &kp COMMA       &kp DOT             &kp P               &kp Y          &kp F          &kp G                &kp C                &kp R            &kp L             &kp QUESTION
+&kp TAB  &mt LEFT_SHIFT A  &mt LEFT_ALT O  &mt LEFT_CONTROL E  &mt LEFT_COMMAND U  &kp I          &kp D          &mt RIGHT_COMMAND H  &mt RIGHT_CONTROL T  &mt RIGHT_ALT N  &mt LEFT_SHIFT S  &kp MINUS
+&mo 3    &kp SEMI          &kp Q           &kp J               &kp K               &kp X          &kp B          &kp M                &kp W                &kp V            &kp Z             &kp RIGHT_ALT
+                                           &mo 5               &mo 1               &lt 4 SPACE    &kp BACKSPACE  &mo 2                &kp ESC
             >;
         };
 
         S1 {
             bindings = <
-&none           &kp DOUBLE_QUOTES  &kp AT    &kp HASH       &kp PERCENT       &none     &none          &kp PLUS       &kp ASTERISK   &kp MINUS  &kp EQUAL  &to 0
-&kp LEFT_SHIFT  &kp GRAVE          &kp PIPE  &kp EXCL       &kp AMPERSAND     &none     &none          &kp DOLLAR     &kp SLASH      &kp TILDE  &kp CARET  &kp RSHIFT
-&none           &kp COLON          &none     &kp LESS_THAN  &kp GREATER_THAN  &none     &none          &kp QUESTION   &kp BACKSLASH  &kp UNDER  &none      &to 0
-                                             &trans         &trans            &trans    &kp BACKSPACE  &kp RIGHT_ALT  &trans
+&none           &none      &kp AT    &kp HASH  &kp PERCENT    &none    &none          &kp PLUS       &kp ASTERISK   &kp MINUS  &kp EQUAL  &none
+&kp LEFT_SHIFT  &kp GRAVE  &kp PIPE  &kp EXCL  &kp AMPERSAND  &none    &none          &kp DOLLAR     &kp SLASH      &kp TILDE  &kp CARET  &kp RSHIFT
+&none           &none      &none     &none     &none          &none    &none          &kp QUESTION   &kp BACKSLASH  &kp UNDER  &none      &none
+                                     &none     &none          &none    &kp BACKSPACE  &kp RIGHT_ALT  &none
             >;
         };
 
         Numpad {
             bindings = <
-&kp KP_NUMLOCK  &none  &kp N1  &kp N2     &kp N3  &none     &none  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &none            &none          &to 0
-&none           &none  &kp N4  &kp N5     &kp N6  &none     &none  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_SHIFT  &kp RIGHT_ALT  &none
-&none           &none  &kp N7  &kp N8     &kp N9  &none     &none  &kp LEFT_BRACE        &kp RIGHT_BRACE        &none            &none          &to 0
-                               &kp LCTRL  &kp N0  &trans    &none  &trans                &none
+&kp KP_NUMLOCK  &none  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &none         &none          &kp KP_PLUS                  &kp KP_MINUS              &kp LS(KP_ASTERISK)  &kp KP_SLASH     &to 0
+&none           &none  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &none         &none          &kp RIGHT_GUI                &kp RIGHT_CONTROL         &kp RIGHT_ALT        &kp RIGHT_SHIFT  &none
+&none           &none  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT    &none          &kp RA(KP_LEFT_PARENTHESIS)  &kp KP_RIGHT_PARENTHESIS  &none                &none            &to 2
+                                        &none            &kp KP_NUMBER_0  &kp ENTER     &kp BACKSPACE  &kp RA(KP_MINUS)             &trans
             >;
         };
 
@@ -59,10 +59,28 @@
 
         Movement {
             bindings = <
-&kp CAPSLOCK  &none      &none      &none     &none     &none         &none          &kp PLUS   &none          &kp MINUS    &none      &to 0
-&none         &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI  &none         &kp BACKSPACE  &kp LEFT   &kp DOWN       &kp UP       &kp RIGHT  &to 0
-&none         &none      &none      &none     &none     &kp DELETE    &none          &kp HOME   &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &to 0
-                                    &none     &none     &trans        &kp ENTER      &kp SPACE  &none
+&kp CAPSLOCK  &none      &none      &none     &none     &none         &none          &kp PLUS   &none          &kp MINUS    &none      &none
+&none         &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI  &none         &kp BACKSPACE  &kp LEFT   &kp DOWN       &kp UP       &kp RIGHT  &none
+&none         &none      &none      &none     &none     &kp DELETE    &none          &kp HOME   &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &none
+                                    &none     &none     &none         &kp ENTER      &kp SPACE  &none
+            >;
+        };
+
+        layer_5 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
+        layer_6 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
