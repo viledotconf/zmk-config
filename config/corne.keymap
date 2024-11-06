@@ -25,26 +25,19 @@
             bindings = <
 &kp ESC  &kp SQT           &kp COMMA       &kp DOT             &kp P               &kp Y          &kp F          &kp G                &kp C                &kp R            &kp L             &kp SLASH
 &kp TAB  &mt LEFT_SHIFT A  &mt LEFT_ALT O  &mt LEFT_CONTROL E  &mt LEFT_COMMAND U  &kp I          &kp D          &mt RIGHT_COMMAND H  &mt RIGHT_CONTROL T  &mt RIGHT_ALT N  &mt LEFT_SHIFT S  &kp MINUS
-&mo 5    &kp SEMI          &kp Q           &kp J               &kp K               &kp X          &kp B          &kp M                &kp W                &kp V            &kp Z             &kp CAPS
-                                           &mo 2               &mo 1               &lt 3 SPACE    &kp BACKSPACE  &kp ESC              &mo 4
+&mo 4    &kp SEMI          &kp Q           &kp J               &kp K               &kp X          &kp B          &kp M                &kp W                &kp V            &kp Z             &kp CAPS
+                                           &kp ESC             &mo 1               &lt 2 SPACE    &kp BACKSPACE  &kp ENTER            &mo 3
             >;
+
+            label = "main";
         };
 
         S1 {
             bindings = <
-&none  &kp GRAVE       &kp AT        &kp HASH          &kp PERCENT   &none    &none          &kp PLUS       &kp ASTERISK       &kp MINUS      &kp EQUAL        &kp RA(QUESTION)
-&none  &kp LEFT_SHIFT  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_GUI  &none    &none          &kp RIGHT_GUI  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &kp RIGHT_SHIFT  &kp RSHIFT
-&none  &none           &none         &none             &none         &none    &none          &kp DOLLAR     &kp BACKSLASH      &kp UNDER      &none            &none
-                                     &none             &none         &none    &kp BACKSPACE  &none          &none
-            >;
-        };
-
-        S2 {
-            bindings = <
-&none  &kp GRAVE       &kp AT        &kp HASH          &kp PERCENT   &none    &none          &kp PLUS       &kp ASTERISK       &kp MINUS      &kp EQUAL        &kp RA(QUESTION)
-&none  &kp LEFT_SHIFT  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_GUI  &none    &none          &kp RIGHT_GUI  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &kp RIGHT_SHIFT  &kp RSHIFT
-&none  &none           &none         &none             &none         &none    &none          &kp QUESTION   &kp BACKSLASH      &kp UNDER      &none            &none
-                                     &none             &none         &none    &kp BACKSPACE  &none          &none
+&none  &kp GRAVE       &kp AT    &kp HASH  &kp PERCENT  &none    &none         &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp ASTERISK  &kp EQUAL        &kp BACKSLASH
+&none  &kp LEFT_SHIFT  &kp PIPE  &kp EXCL  &kp AMPS     &none    &none         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp TILDE     &kp RIGHT_SHIFT  &none
+&none  &none           &none     &none     &none        &none    &none         &kp DOLLAR            &kp CARET              &none         &none            &none
+                                 &none     &none        &none    &kp LEFT_GUI  &kp RALT              &kp LCTRL
             >;
         };
 
@@ -61,7 +54,7 @@
             bindings = <
 &none  &none  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &none         &none          &kp KP_PLUS                  &kp KP_MINUS              &kp LS(KP_ASTERISK)  &kp KP_SLASH     &to 0
 &none  &none  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &none         &none          &kp RIGHT_GUI                &kp RIGHT_CONTROL         &kp RIGHT_ALT        &kp RIGHT_SHIFT  &none
-&none  &none  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT    &none          &kp RA(KP_LEFT_PARENTHESIS)  &kp KP_RIGHT_PARENTHESIS  &none                &none            &to 4
+&none  &none  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT    &none          &kp RA(KP_LEFT_PARENTHESIS)  &kp KP_RIGHT_PARENTHESIS  &none                &none            &to 3
                                &none            &kp KP_NUMBER_0  &kp ENTER     &kp BACKSPACE  &kp RA(KP_MINUS)             &trans
             >;
         };
