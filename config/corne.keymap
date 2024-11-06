@@ -60,7 +60,7 @@
         Numpad {
             bindings = <
 &none  &none  &kp N7        &kp N8        &kp N9        &none        &none          &kp PLUS              &kp MINUS              &kp ASTERISK   &kp SLASH        &to 0
-&none  &none  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &none        &none          &kp RIGHT_GUI         &kp RIGHT_CONTROL      &kp RIGHT_ALT  &kp RIGHT_SHIFT  &none
+&none  &none  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &none        &none          &kp RIGHT_GUI         &kp RIGHT_CONTROL      &kp RIGHT_ALT  &kp RIGHT_SHIFT  &to 5
 &none  &none  &kp N1        &kp NUMBER_2  &kp NUMBER_3  &kp COMMA    &none          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none          &none            &to 3
                             &kp DOT       &kp N0        &kp ENTER    &kp BACKSPACE  &kp RA(MINUS)         &trans
             >;
@@ -73,10 +73,21 @@
 &none   &none       &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp K_PLAY_PAUSE  &none           &kp F1             &kp F2           &kp F3         &kp F4   &kp F5   &kp F6
 &none   &kp K_MUTE  &kp C_VOLUME_DOWN     &kp C_VOLUME_UP       &kp K_PREVIOUS    &kp K_NEXT      &kp F7             &kp F8           &kp F9         &kp F10  &kp F11  &kp F12
 &trans  &none       &bt BT_PRV            &bt BT_NXT            &none             &bt BT_CLR      &none              &none            &none          &none    &none    &none
-                                          &none                 &none             &kp LEFT_GUI    &kp RIGHT_CONTROL  &kp RIGHT_SHIFT  &kp RIGHT_ALT
+                                          &to 5                 &none             &kp LEFT_GUI    &kp RIGHT_CONTROL  &kp RIGHT_SHIFT  &kp RIGHT_ALT
             >;
 
             label = "BT & Med";
+        };
+
+        Gaming {
+            bindings = <
+&kp ESC    &kp APOS  &kp COMMA  &kp DOT    &kp P     &kp Y        &kp F     &kp G     &kp C      &kp R  &kp L  &kp FSLH
+&kp TAB    &kp A     &kp O      &kp E      &kp U     &kp I        &kp D     &kp H     &kp T      &kp N  &kp L  &kp MINUS
+&kp LSHFT  &kp SEMI  &kp Q      &kp J      &kp K     &kp X        &kp B     &kp M     &kp W      &kp V  &kp Z  &to 0
+                                &kp LCTRL  &kp LALT  &kp SPACE    &kp BSPC  &kp LGUI  &kp ENTER
+            >;
+
+            label = "Gaming";
         };
     };
 
