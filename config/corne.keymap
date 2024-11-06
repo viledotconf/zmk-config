@@ -59,10 +59,10 @@
 
         Numpad {
             bindings = <
-&none  &none  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &none         &none          &kp KP_PLUS                  &kp KP_MINUS              &kp LS(KP_ASTERISK)  &kp KP_SLASH     &to 0
-&none  &none  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &none         &none          &kp RIGHT_GUI                &kp RIGHT_CONTROL         &kp RIGHT_ALT        &kp RIGHT_SHIFT  &none
-&none  &none  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT    &none          &kp RA(KP_LEFT_PARENTHESIS)  &kp KP_RIGHT_PARENTHESIS  &none                &none            &to 3
-                               &none            &kp KP_NUMBER_0  &kp ENTER     &kp BACKSPACE  &kp RA(KP_MINUS)             &trans
+&none  &none  &kp N7        &kp N8        &kp N9        &none        &none          &kp PLUS              &kp MINUS              &kp ASTERISK   &kp SLASH        &to 0
+&none  &none  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &none        &none          &kp RIGHT_GUI         &kp RIGHT_CONTROL      &kp RIGHT_ALT  &kp RIGHT_SHIFT  &none
+&none  &none  &kp N1        &kp NUMBER_2  &kp NUMBER_3  &kp COMMA    &none          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none          &none            &to 3
+                            &kp DOT       &kp N0        &kp ENTER    &kp BACKSPACE  &kp RA(MINUS)         &trans
             >;
 
             label = "Numpad";
@@ -76,7 +76,7 @@
                                           &none                 &none             &kp LEFT_GUI    &kp RIGHT_CONTROL  &kp RIGHT_SHIFT  &kp RIGHT_ALT
             >;
 
-            label = "BT & Media";
+            label = "BT & Med";
         };
     };
 
