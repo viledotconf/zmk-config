@@ -32,7 +32,7 @@
                                            &kp ESC             &mo 1               &lt 2 SPACE    &kp BACKSPACE  &kp ENTER            &mo 3
             >;
 
-            label = "main";
+            label = "Dvorak";
         };
 
         S1 {
@@ -42,15 +42,19 @@
 &none  &none           &none     &none     &none        &none    &none         &kp DOLLAR            &kp CARET              &none         &none            &none
                                  &none     &none        &none    &kp LEFT_GUI  &kp RALT              &kp LCTRL
             >;
+
+            label = "Symbols";
         };
 
         Movement {
             bindings = <
-&none  &none      &mkp RCLK  &mkp MCLK  &mkp LCLK  &none    &none       &kp PLUS   &none          &kp MINUS    &none      &none
-&none  &kp LSHFT  &kp LCTRL  &kp LALT   &kp LGUI   &none    &kp DELETE  &kp LEFT   &kp DOWN       &kp UP       &kp RIGHT  &none
-&none  &none      &none      &none      &none      &none    &none       &kp HOME   &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &none
-                             &none      &none      &none    &kp ENTER   &kp SPACE  &none
+&none  &none      &mkp RCLK     &mkp MCLK         &mkp LCLK  &none    &none       &kp PLUS   &none          &kp MINUS    &none      &none
+&none  &kp LSHFT  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LGUI   &none    &kp DELETE  &kp LEFT   &kp DOWN       &kp UP       &kp RIGHT  &none
+&none  &none      &none         &none             &none      &none    &none       &kp HOME   &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &none
+                                &none             &none      &none    &kp ENTER   &kp SPACE  &none
             >;
+
+            label = "Movement";
         };
 
         Numpad {
@@ -60,6 +64,8 @@
 &none  &none  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT    &none          &kp RA(KP_LEFT_PARENTHESIS)  &kp KP_RIGHT_PARENTHESIS  &none                &none            &to 3
                                &none            &kp KP_NUMBER_0  &kp ENTER     &kp BACKSPACE  &kp RA(KP_MINUS)             &trans
             >;
+
+            label = "Numpad";
         };
 
         Media {
@@ -69,6 +75,8 @@
 &trans  &none       &bt BT_PRV            &bt BT_NXT            &none             &bt BT_CLR      &none              &none            &none          &none    &none    &none
                                           &none                 &none             &kp LEFT_GUI    &kp RIGHT_CONTROL  &kp RIGHT_SHIFT  &kp RIGHT_ALT
             >;
+
+            label = "BT&Func&Media";
         };
     };
 
