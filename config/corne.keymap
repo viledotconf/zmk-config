@@ -76,7 +76,7 @@
                                           &none                 &none             &kp LEFT_GUI    &kp RIGHT_CONTROL  &kp RIGHT_SHIFT  &kp RIGHT_ALT
             >;
 
-            label = "BT&Func&Media";
+            label = "BT & Media";
         };
     };
 
