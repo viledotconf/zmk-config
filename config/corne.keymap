@@ -27,10 +27,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none  &kp SQT           &kp COMMA       &kp DOT             &kp P               &kp Y          &kp F          &kp G                &kp C                &kp R            &kp L             &none
-&none  &mt LEFT_SHIFT A  &mt LEFT_ALT O  &mt LEFT_CONTROL E  &mt LEFT_COMMAND U  &kp I          &kp D          &mt RIGHT_COMMAND H  &mt RIGHT_CONTROL T  &mt RIGHT_ALT N  &mt LEFT_SHIFT S  &none
-&none  &lt 4 SEMI        &kp Q           &kp J               &kp K               &kp X          &kp B          &kp M                &kp W                &kp V            &kp Z             &none
-                                         &kp ESC             &mo 1               &lt 2 SPACE    &kp BACKSPACE  &mo 3                &kp ENTER
+&none  &kp SQT           &kp COMMA        &kp DOT             &kp P               &kp Y          &kp F          &kp G                &kp C                &kp R            &kp L             &none
+&none  &mt LEFT_SHIFT A  &mt RIGHT_ALT O  &mt LEFT_CONTROL E  &mt LEFT_COMMAND U  &kp I          &kp D          &mt RIGHT_COMMAND H  &mt RIGHT_CONTROL T  &mt RIGHT_ALT N  &mt LEFT_SHIFT S  &none
+&none  &lt 4 SEMI        &kp Q            &kp J               &kp K               &kp X          &kp B          &kp M                &kp W                &kp V            &kp Z             &none
+                                          &kp ESC             &mo 1               &lt 2 SPACE    &kp BACKSPACE  &mo 3                &kp ENTER
             >;
 
             label = "Dvorak";
