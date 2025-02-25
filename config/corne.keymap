@@ -16,6 +16,14 @@
 };
 
 / {
+    behaviors {
+        new_behavior: new_behavior {
+            compatible = "zmk,behavior-mouse-key-press";
+            label = "NEW_BEHAVIOR";
+            #binding-cells = <1>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -72,9 +80,9 @@
         Media {
             bindings = <
 &none   &kp C_BRI_UP  &kp K_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &none         &none              &kp F1           &kp F2         &kp F3   &kp F4   &none
-&none   &kp C_BRI_DN  &mkp MB4    &mkp MB5      &mkp MCLK     &kp LGUI      &none              &kp F5           &kp F6         &kp F7   &kp F8   &none
+&none   &kp C_BRI_DN  &mkp MB4    &mkp MB5      &mkp MB3      &kp LGUI      &none              &kp F5           &kp F6         &kp F7   &kp F8   &none
 &trans  &none         &bt BT_PRV  &bt BT_NXT    &none         &bt BT_CLR    &none              &kp F9           &kp F10        &kp F11  &kp F12  &none
-                                  &none         &mkp LCLK     &mkp RCLK     &kp RIGHT_CONTROL  &kp RIGHT_SHIFT  &kp RIGHT_ALT
+                                  &none         &mkp MB1      &mkp MB2      &kp RIGHT_CONTROL  &kp RIGHT_SHIFT  &kp RIGHT_ALT
             >;
 
             label = "M & M";
