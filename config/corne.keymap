@@ -49,10 +49,10 @@
 
         Movement {
             bindings = <
-&none  &kp ESCAPE  &mkp RCLK     &mkp MCLK         &mkp LCLK  &none    &none       &kp PLUS   &none          &kp MINUS    &none      &none
-&none  &kp LSHFT   &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LGUI   &none    &kp DELETE  &kp LEFT   &kp DOWN       &kp UP       &kp RIGHT  &none
-&none  &none       &none         &none             &none      &none    &none       &kp HOME   &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &none
-                                 &kp CAPS          &none      &none    &kp ENTER   &kp SPACE  &kp TAB
+&none  &kp ESCAPE  &none         &none             &none     &mkp MB4    &none       &kp PLUS   &none          &kp MINUS    &none      &none
+&none  &kp LSHFT   &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LGUI  &mkp MB3    &kp DELETE  &kp LEFT   &kp DOWN       &kp UP       &kp RIGHT  &none
+&none  &kp CAPS    &mkp MB4      &mkp MB5          &mkp MB2  &mkp MB1    &none       &kp HOME   &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &none
+                                 &none             &none     &none       &kp ENTER   &kp SPACE  &kp TAB
             >;
 
             label = "Movement";
