@@ -8,6 +8,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
 
 &mt {
     flavor = "tap-preferred";
@@ -28,8 +29,8 @@
             bindings = <
 &kp ESC  &kp SQT           &kp COMMA        &kp DOT             &kp P               &kp Y          &kp F          &kp G                &kp C                &kp R            &kp L             &kp FSLH
 &kp TAB  &mt LEFT_SHIFT A  &mt RIGHT_ALT O  &mt LEFT_CONTROL E  &mt LEFT_COMMAND U  &kp I          &kp D          &mt RIGHT_COMMAND H  &mt RIGHT_CONTROL T  &mt RIGHT_ALT N  &mt LEFT_SHIFT S  &kp MINUS
-&mo 4    &kp SEMICOLON     &kp Q            &kp J               &kp K               &kp X          &kp B          &kp M                &kp W                &kp V            &kp Z             &none
-                                            &kp ESC             &mo 1               &lt 2 SPACE    &kp BACKSPACE  &mo 3                &kp ENTER
+&mo 4    &kp SEMICOLON     &kp Q            &kp J               &kp K               &kp X          &kp B          &kp M                &kp W                &kp V            &kp Z             &kp CAPS
+                                            &mo 5               &mo 1               &lt 2 SPACE    &kp BACKSPACE  &mo 3                &kp ENTER
             >;
 
             label = "Dvorak";
@@ -37,9 +38,9 @@
 
         S1 {
             bindings = <
-&none  &kp GRAVE       &kp AT    &kp HASH   &kp PERCENT    &none    &none         &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp ASTERISK  &kp EQUAL        &none
+&none  &kp GRAVE       &kp AT    &kp HASH   &kp PERCENT    &none    &none         &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp ASTERISK  &kp EQUAL        &kp BACKSLASH
 &none  &kp LEFT_SHIFT  &kp PIPE  &kp EXCL   &kp AMPS       &none    &kp MINUS     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp TILDE     &kp RIGHT_SHIFT  &none
-&none  &kp LCTRL       &none     &kp CARET  &kp BACKSLASH  &none    &none         &kp SLASH             &kp DOLLAR             &none         &kp RCTRL        &none
+&none  &kp LCTRL       &none     &kp CARET  &kp BACKSLASH  &none    &none         &kp QUESTION          &kp DOLLAR             &none         &kp RCTRL        &none
                                  &none      &none          &none    &kp LEFT_GUI  &kp RALT              &none
             >;
 
@@ -70,13 +71,22 @@
 
         Media {
             bindings = <
-&sys_reset   &kp C_BRI_UP  &kp K_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &none         &none              &kp F1           &kp F2         &kp F3   &kp F4   &sys_reset
-&bootloader  &kp C_BRI_DN  &none       &none         &none         &kp LGUI      &none              &kp F5           &kp F6         &kp F7   &kp F8   &bootloader
-&trans       &none         &bt BT_PRV  &bt BT_NXT    &none         &bt BT_CLR    &none              &kp F9           &kp F10        &kp F11  &kp F12  &none
-                                       &none         &none         &none         &kp RIGHT_CONTROL  &kp RIGHT_SHIFT  &kp RIGHT_ALT
+&sys_reset   &none       &kp C_BRI_DEC  &kp C_BRI_INC  &none  &none           &none              &kp F1           &kp F2         &kp F3   &kp F4   &sys_reset
+&bootloader  &kp K_MUTE  &kp C_VOL_DN   &kp C_VOL_UP   &none  &none           &none              &kp F5           &kp F6         &kp F7   &kp F8   &bootloader
+&trans       &none       &bt BT_PRV     &bt BT_NXT     &none  &bt BT_CLR      &none              &kp F9           &kp F10        &kp F11  &kp F12  &none
+                                        &none          &none  &kp LEFT_GUI    &kp RIGHT_CONTROL  &kp RIGHT_SHIFT  &kp RIGHT_ALT
             >;
 
-            label = "M & M";
+            label = "Media";
+        };
+
+        Mouse {
+            bindings = <
+&trans  &trans    &trans    &trans    &trans    &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &mkp MB4  &mkp MB2  &mkp MB3  &mkp MB1  &mkp MB5    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans    &trans    &trans    &trans    &trans      &trans  &trans  &trans  &trans  &trans  &trans
+                            &trans    &none     &none       &trans  &trans  &trans
+            >;
         };
     };
 
