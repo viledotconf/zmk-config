@@ -28,7 +28,7 @@
             bindings = <
 &kp ESC  &kp SQT           &kp COMMA        &kp DOT             &kp P               &kp Y          &kp F          &kp G                &kp C                &kp R            &kp L             &kp FSLH
 &kp TAB  &mt LEFT_SHIFT A  &mt RIGHT_ALT O  &mt LEFT_CONTROL E  &mt LEFT_COMMAND U  &kp I          &kp D          &mt RIGHT_COMMAND H  &mt RIGHT_CONTROL T  &mt RIGHT_ALT N  &mt LEFT_SHIFT S  &kp MINUS
-&mo 4    &kp SEMICOLON     &kp Q            &kp J               &kp K               &kp X          &kp B          &kp M                &kp W                &kp V            &kp Z             &kp CAPS
+&mo 4    &kp SEMICOLON     &kp Q            &kp J               &kp K               &kp X          &kp B          &kp M                &kp W                &kp V            &kp Z             &to 5
                                             &mo 5               &mo 1               &lt 2 SPACE    &kp BACKSPACE  &mo 3                &kp ENTER
             >;
 
@@ -40,7 +40,7 @@
 &none  &kp GRAVE       &kp AT    &kp HASH   &kp PERCENT    &none    &none         &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp ASTERISK  &kp EQUAL        &kp BACKSLASH
 &none  &kp LEFT_SHIFT  &kp PIPE  &kp EXCL   &kp AMPS       &none    &kp MINUS     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp TILDE     &kp RIGHT_SHIFT  &none
 &none  &kp LCTRL       &none     &kp CARET  &kp BACKSLASH  &none    &none         &kp QUESTION          &kp DOLLAR             &none         &kp RCTRL        &none
-                                 &none      &none          &none    &kp LEFT_GUI  &kp RALT              &none
+                                 &none      &none          &none    &kp LEFT_GUI  &kp RALT              &kp CAPS
             >;
 
             label = "Symbols";
@@ -79,11 +79,11 @@
             label = "Media";
         };
 
-        Mouse {
+        gaming {
             bindings = <
-&kp ESC    &kp N1  &kp N2  &kp N3     &kp N4    &kp N5       &kp N6     &kp N7    &kp N8    &kp N9  &kp N0    &kp MINUS
+&kp ESC    &kp N1  &kp N2  &kp N3     &kp N4    &kp N5       &kp N6     &kp N7    &kp N8    &kp N9  &kp N0    &to 0
 &kp TAB    &kp Q   &kp W   &kp E      &kp R     &kp T        &kp Y      &kp U     &kp I     &kp O   &kp P     &kp EQUAL
-&kp LSHFT  &kp A   &kp S   &kp D      &kp F     &kp G        &kp H      &kp J     &kp K     &kp L   &kp SEMI  &kp APOS
+&kp LSHFT  &kp A   &kp S   &kp D      &kp F     &kp G        &kp H      &kp J     &kp K     &kp L   &kp SEMI  &to 0
                            &kp LCTRL  &kp LALT  &kp SPACE    &kp ENTER  &kp RGUI  &kp RALT
             >;
         };
