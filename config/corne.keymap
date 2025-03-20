@@ -37,10 +37,10 @@
 
         S1 {
             bindings = <
-&none  &kp GRAVE       &kp AT     &kp HASH   &kp PERCENT  &none       &kp PLUS       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp EQUAL  &none            &none
-&none  &kp LEFT_SHIFT  &kp PIPE   &kp EXCL   &kp APOS     &kp AMPS    &kp MINUS      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SLASH  &kp RIGHT_SHIFT  &none
-&none  &none           &kp TILDE  &kp CARET  &kp COLON    &none       &kp BACKSLASH  &kp QUESTION          &kp DOLLAR             &kp ASTRK  &none            &none
-                                  &none      &none        &none       &kp LEFT_GUI   &kp RALT              &kp LEFT_CONTROL
+&none  &kp GRAVE       &kp AT     &kp HASH   &kp PERCENT  &none       &kp PLUS      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp EQUAL      &none            &none
+&none  &kp LEFT_SHIFT  &kp PIPE   &kp EXCL   &kp APOS     &kp AMPS    &kp MINUS     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SLASH      &kp RIGHT_SHIFT  &none
+&none  &none           &kp TILDE  &kp CARET  &kp COLON    &none       &kp ASTRK     &kp QUESTION          &kp DOLLAR             &kp BACKSLASH  &none            &none
+                                  &none      &none        &none       &kp LEFT_GUI  &kp RALT              &kp LEFT_CONTROL
             >;
 
             label = "Symbols";
