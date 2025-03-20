@@ -26,9 +26,9 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none  &kp SEMI          &kp COMMA        &kp DOT             &kp P               &kp Y          &kp F          &kp G                &kp C                &kp R            &kp L             &none
+&none  &kp ESCAPE        &kp COMMA        &kp DOT             &kp P               &kp Y          &kp F          &kp G                &kp C                &kp R            &kp L             &none
 &none  &mt LEFT_SHIFT A  &mt RIGHT_ALT O  &mt LEFT_CONTROL E  &mt LEFT_COMMAND U  &kp I          &kp D          &mt RIGHT_COMMAND H  &mt RIGHT_CONTROL T  &mt RIGHT_ALT N  &mt LEFT_SHIFT S  &none
-&none  &kp APOS          &kp Q            &kp J               &kp K               &kp X          &kp B          &kp M                &kp W                &kp V            &kp Z             &none
+&none  &kp SEMI          &kp Q            &kp J               &kp K               &kp X          &kp B          &kp M                &kp W                &kp V            &kp Z             &none
                                           &mo 4               &mo 1               &lt 2 SPACE    &kp BACKSPACE  &mo 3                &kp ESCAPE
             >;
 
@@ -37,10 +37,10 @@
 
         S1 {
             bindings = <
-&none  &kp GRAVE       &kp AT     &kp HASH   &kp PERCENT  &none       &kp PLUS      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp EQUAL      &kp ASTERISK     &none
-&none  &kp LEFT_SHIFT  &kp PIPE   &kp EXCL   &kp APOS     &kp AMPS    &kp MINUS     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SLASH      &kp RIGHT_SHIFT  &none
-&none  &kp LCTRL       &kp TILDE  &kp CARET  &kp COLON    &none       &none         &kp QUESTION          &kp DOLLAR             &kp BACKSLASH  &kp RCTRL        &none
-                                  &none      &none        &none       &kp LEFT_GUI  &kp RALT              &kp CAPS
+&none  &kp GRAVE       &kp AT     &kp HASH   &kp PERCENT  &none       &kp PLUS       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp EQUAL  &none            &none
+&none  &kp LEFT_SHIFT  &kp PIPE   &kp EXCL   &kp APOS     &kp AMPS    &kp MINUS      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SLASH  &kp RIGHT_SHIFT  &none
+&none  &none           &kp TILDE  &kp CARET  &kp COLON    &none       &kp BACKSLASH  &kp QUESTION          &kp DOLLAR             &kp ASTRK  &none            &none
+                                  &none      &none        &none       &kp LEFT_GUI   &kp RALT              &kp LEFT_CONTROL
             >;
 
             label = "Symbols";
@@ -48,10 +48,10 @@
 
         Movement {
             bindings = <
-&none  &kp CAPS   &none         &kp ESC           &none     &none      &none       &kp PLUS   &none          &kp MINUS    &none      &none
-&none  &kp LSHFT  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LGUI  &kp TAB    &kp DELETE  &kp LEFT   &kp DOWN       &kp UP       &kp RIGHT  &none
-&none  &none      &none         &none             &none     &none      &none       &kp HOME   &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &none
-                                &none             &none     &none      &kp ENTER   &kp SPACE  &none
+&none  &kp ESC        &none         &none             &none     &none      &none       &kp PLUS   &none          &kp MINUS    &none      &none
+&none  &mt LSHFT TAB  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LGUI  &kp TAB    &kp DELETE  &kp LEFT   &kp DOWN       &kp UP       &kp RIGHT  &none
+&none  &none          &none         &none             &none     &none      &kp CAPS    &kp HOME   &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &none
+                                    &none             &none     &none      &kp ENTER   &kp SPACE  &none
             >;
 
             label = "Movement";
