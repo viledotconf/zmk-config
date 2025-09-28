@@ -8,6 +8,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
 
 &mt {
     flavor = "tap-preferred";
@@ -48,9 +49,9 @@
 
         Movement {
             bindings = <
-&trans  &kp ESC    &none         &none             &none     &none      &none       &kp PLUS   &none          &kp MINUS    &none      &none
+&trans  &kp ESC    &mkp MB2      &mkp MB1          &none     &none      &none       &kp PLUS   &none          &kp MINUS    &none      &none
 &trans  &kp LSHFT  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LGUI  &kp TAB    &kp DELETE  &kp LEFT   &kp DOWN       &kp UP       &kp RIGHT  &none
-&none   &none      &none         &none             &none     &none      &kp CAPS    &kp HOME   &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &none
+&none   &none      &none         &none             &mkp MB3  &none      &kp CAPS    &kp HOME   &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &none
                                  &none             &none     &none      &kp ENTER   &kp SPACE  &none
             >;
 
