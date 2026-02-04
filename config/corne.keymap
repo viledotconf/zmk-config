@@ -98,9 +98,9 @@
 
         Media {
             bindings = <
-&none  &none       &kp C_BRI_DEC  &kp C_BRI_INC  &none  &sys_reset      &sys_reset         &kp F1           &kp F2         &kp F3   &kp F4   &none
-&none  &kp K_MUTE  &kp C_VOL_DN   &kp C_VOL_UP   &none  &bootloader     &bootloader        &kp F5           &kp F6         &kp F7   &kp F8   &none
-&none  &none       &bt BT_PRV     &bt BT_NXT     &none  &bt BT_CLR      &none              &kp F9           &kp F10        &kp F11  &kp F12  &none
+&none  &bt0_rgb    &bt1_rgb       &bt2_rgb       &bt3_rgb  &bt4_rgb       &sys_reset         &kp F1           &kp F2         &kp F3   &kp F4   &none
+&none  &kp K_MUTE  &kp C_VOL_DN   &kp C_VOL_UP   &none     &bootloader    &bootloader        &kp F5           &kp F6         &kp F7   &kp F8   &none
+&none  &none       &kp C_BRI_DEC  &kp C_BRI_INC  &none     &bt BT_CLR     &none              &kp F9           &kp F10        &kp F11  &kp F12  &none
                                   &none          &none  &kp LEFT_GUI    &kp RIGHT_CONTROL  &kp RIGHT_SHIFT  &kp RIGHT_ALT
             >;
 
