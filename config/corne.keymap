@@ -83,7 +83,7 @@
 
         Movement {
             bindings = <
-&none  &kp ESC    &bt BT_SEL 0  &bt BT_SEL 1      &bt BT_SEL 2  &bt BT_SEL 4    &bt BT_CLR  &none      &none          &none        &bt BT_CLR_ALL  &none
+&none  &kp ESC    &bt0_rgb      &bt1_rgb          &bt2_rgb      &bt3_rgb        &bt BT_CLR  &none      &none          &none        &bt BT_CLR_ALL  &none
 &none  &kp LSHFT  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LGUI      &kp TAB         &kp DELETE  &kp LEFT   &kp DOWN       &kp UP       &kp RIGHT       &none
 &none  &to 5      &none         &none             &none         &none           &none       &kp HOME   &kp PAGE_DOWN  &kp PAGE_UP  &kp END         &none
                                 &none             &none         &none           &kp ENTER   &kp SPACE  &none
