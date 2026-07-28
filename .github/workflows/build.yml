@@ -2,4 +2,6 @@ on: [push, pull_request, workflow_dispatch]
 
 jobs:
   build:
-    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+    # Pinned to the same tag as `revision:` in config/west.yml. The workflow on
+    # `main` targets Zephyr 4.1 hardware model v2 boards and fails against v0.3.
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@v0.3
